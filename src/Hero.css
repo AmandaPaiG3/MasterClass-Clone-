@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #000000, #141414);
+    color: #fff;
+    height: 53em;
+    width: auto;
+    
+  }
+
+  .hero-left { 
+    max-width: 50%;
+    height: 100%;
+   
+    
+  }
+  
+  .hero-left img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover; 
+   
+  }
+
+
+  
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50%;
+    padding: 20px;
+    
+  }
+  
+  .hero-right h1 {
+    font-size: 5rem;
+    line-height: 64px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-right .divider {
+    width: 50px;
+    fill: white;
+   
+  }
+  
+  .hero-right h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-top: -5px;
+  }
+  
+  .hero-right p {
+    font-size: 1.34rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 80%;
+   
+  }
+  
+  .signup-hero {
+    background-color: #E32652;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    width: 60%;
+    margin-top: 1rem;
+  }
+  
+  .signup-hero:hover {
+    background-color: #d40813;
+  }
+  
+ /* Phone View */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 0px;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+  }
+
+  .hero-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-left img {
+    height: auto;
+    max-height: 400px; 
+    margin-right: 25px;
+  }
+
+  .hero-right {
+    padding: 0px;
+    margin-top: -15px;
+  }
+
+  .hero-right h1 {
+    font-size: 2rem;
+  }
+
+  .hero-right h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-right p {
+    font-size: 0.8rem;
+  }
+
+  .signup-hero {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+
+  /* Tablet View */
+@media (max-width: 1080px) {
+  .hero {
+    display: flex;
+  }
+
+  .hero-left img { 
+    height: 700px;
+    display: block;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+
+
+  .hero-right {
+    padding-bottom: 65px;
+  }
+
+  .hero-right h1 {
+    font-size: 3.5rem;
+    line-height: 50px;
+    
+  }
+
+  .hero-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-right p {
+    font-size: 0.9rem;
+  }
+
+  .signup-hero {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

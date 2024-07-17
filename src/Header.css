@@ -1,0 +1,146 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
+    color: #fff;
+    padding: 20px 20px; 
+    max-width: 100%;
+    box-sizing: border-box;
+    
+
+    
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  
+  .nav {
+    /*flex-grow: 1;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    width: auto;
+    margin-left: 20px;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding-left: 6em;
+    margin-right: 1em;
+    min-width: 70%;
+    justify-content: center;
+    max-width: auto;
+   
+  
+  }
+  
+  .nav li {
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+  .signup { 
+    background-color: #E32652;
+    border: none;
+    border-radius: 9px;
+    height: 50px;
+    
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 6em;
+    min-width: 30%;
+ 
+  }
+
+  
+
+  .header-left { 
+    display: flex;
+    width: 60%;
+    gap: 30px;
+    
+    align-items: center;
+    justify-content: center;
+  
+    
+  }
+  
+
+  .search-input {
+    
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly rounded corners */
+    background-color: #141414; /* Medium gray background */
+    color: #d3d3d3; /* Light gray text */
+    width: 70%;
+    height: 4em;
+    border: none;
+    box-shadow: #ccc;
+    max-width: 600px;
+    min-width: 50%;
+    
+    
+  }
+  
+  .search-input::placeholder {
+    color: #adabab; /* Light gray placeholder text */
+    padding-left: 15px;
+    font-size: 18px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+    }
+    .mobile-nav {
+      display: block;
+    }
+    .search-input {
+      display: none;
+    }
+  }
+
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .header-left {
+      width: 50%;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  
+    .nav {
+      display: flex;
+      width: 50%;
+      
+    }
+
+    .nav li {
+      font-size: 16px;
+    }
+  }

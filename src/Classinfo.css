@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    color: white;
+    background-color: black;
+    
+}
+
+
+.class-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 15px;
+
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Fallback color */
+    margin-bottom: 1.5rem; /* Adjust as needed */
+    border-radius: 25px; /* Border radius applied to container */
+}
+
+.classinfo-left h2{ 
+    padding-bottom: 20px;
+    font-size: 30px;
+    
+}
+
+.classinfo-right {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    
+}
+
+
+
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: sticky;
+    margin-top: 15px;
+    height: 11vh;
+
+    
+}
+
+.buttons-container button {
+    background-color: #E32652;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-container button:hover {
+    background-color: #555;
+}
+
+.lesson { 
+    padding-top: 60px;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    height: 6vh;
+    overflow: hidden;
+    
+
+}
+
+.lesson-plan { 
+    position: relative;
+    width: 20%;
+    max-height: 38vh; /* Adjust as needed to fit within the container */
+    overflow-y: auto;
+    width: 24em;
+    margin-top: 12px;
+
+}
+
+
+.lessons-container {
+    margin-top: 10px;
+    
+}
+
+.lesson-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    
+
+}
+
+.lesson.expanded {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+.lesson-details {
+    padding-top: 10px;
+
+}
+
+.browse {
+    position: sticky;
+    font-size: 18px;
+    top: 0;
+    background-color: black;
+    z-index: 99; /* Higher z-index to stay above scrolling content */
+    padding: 10px 0; /* Optional padding for better spacing */
+    margin-bottom: 0; /* Remove any bottom margin */
+}
+
+
+.class-info-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 14em;
+    padding: 10px;
+    max-width: 75%;
+    margin-bottom: 14vh;
+}
+
+.class-info-footer p {
+    margin: 5px 0;
+}
+
+.class-info-footer strong {
+    color: rgb(188, 188, 188);
+    
+}
+
+.class-info-footer .instructor-name {
+    color: white;
+}
+
+.topics-covered {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.topic-badge {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 1024px) {
+    .class-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .classinfo-right,
+    .class-info-footer {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .class-info {
+        padding-top: 30px;
+    }
+
+    .classinfo-left h2 {
+        font-size: 22px;
+
+    }
+
+    .video-container {
+        width: 60%;
+    }
+
+    .classinfo-right{ 
+
+        width: 60vh;
+    }
+
+    .buttons-container {
+        position: static;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .buttons-container button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .lesson-plan {
+        width: 100%;
+    }
+
+    .class-info-footer {
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+
